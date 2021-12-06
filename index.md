@@ -4,13 +4,15 @@ title: Adding and Removing Masks to/from People Using GANs
 description: Project Site of LIM Paper "Adding and Removing Masks to/from People Using GANs"
 author: Imad Eddine MAROUF
 ---
-![](./image/RegAffine.PNG)
-IR-RGB registration with the VoxelMorph architecture and the affine
-network. When VoxelMorph (2nd and 3rd row) is trained with λ =
-0.6 and λ = 0.1, it poorly deforms the shape of the objects in the
-image. When compared visually, the affine network (1st row)
-achieves better results.
+![](./image/Mask2Unmask_pics.png)
+Samples of generating \textit{masked faces from naked faces} using CycleGAN. First row corresponds to the output of CycleGAN network, second row is the input 
+of the Cycle-GAN, and third row is the ground-truth image.  Cycle-GAN provides good results for putting masks on naked faces. Furthermore, we notice that sometimes 
+it puts masks of different color than the original one in the ground-truth image.
 
+![](./image/Unmask2Mask_pics.png)
+Samples of generating naked faces from nasked faces using CycleGAN. First row corresponds to the output of CycleGAN network, second row is the input of the Cycle-GAN, and 
+third row is the ground-truth image. Cycle-GAN fails at constructing a good facial representation as illustrated in the 5th column, 
+the network lowered the intensity of the mask color instead of removing it completely.
 
 ### Abstract ###
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We present a system to perform joint registration and fusion
@@ -32,15 +34,15 @@ tasks effectively in challenging visibility conditions such as heavy
 smoke after a fire.
 
 #### Publications: ####
-* Marouf I.E, Ümit Bora GÖKBAKAN. (2021) "Adding and Removing Masks to/from People Using GANs" [[pdf]](./paper/Joint_Unsupervised_Video_Registration_and_Fusion.pdf) [[bibtex]](./bib/Marouf_Karaimer_LIM21.bib) 
+* Marouf I.E, Ümit Bora GÖKBAKAN. (2021) "Adding and Removing Masks to/from People Using GANs" [[pdf]](./paper/MAROUF_GOKBAKAN_INF634.pdf)
 
 #### Code, Data, and Supplemental Material ####
 
 Please download the code [GitHub](https://github.com/IemProg/add-remove-masks-CycleGAN).   
 
-Please download the supplemental material [[pdf]](./paper/MAROUF_GOKBAKAN_INF634.pdf).
+Please download the report [[pdf]](./paper/MAROUF_GOKBAKAN_INF634.pdf).
 
 #### People ####
 [Imad Eddine Marouf], 	imad.marouf (at) ip-paris.fr
 
-[Sabine Süsstrunk](Ümit Bora GÖKBAKAN), 	umit.gokbakan at ip-paris.fr
+[Ümit Bora GÖKBAKAN], 	umit.gokbakan at ip-paris.fr
