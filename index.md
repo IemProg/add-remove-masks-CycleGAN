@@ -15,30 +15,26 @@ third row is the ground-truth image. Cycle-GAN fails at constructing a good faci
 the network lowered the intensity of the mask color instead of removing it completely.
 
 ### Abstract ###
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We present a system to perform joint registration and fusion
-for RGB and Infrared (IR) video pairs. While RGB is related to
-human perception, IR is associated with heat. However, IR images often lack contour and texture information. The goal with
-the fusion of the visible and IR images is to obtain more information from them. This requires two completely matched images.
-However, classical methods assuming ideal imaging conditions
-fail to achieve satisfactory performance in actual cases. From
-the data-dependent modeling point of view, labeling the dataset
-is costly and impractical.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image translation is concerned with taking one visual
+representation in a domain, and transforming it into another domain, whilst maintaining similarity to the input in
+the original domain. Well known examples to this include,
+image colourisation, creating realistic images from edge
+contours, taking horse images and converting them to zebras, changing people’s genders and alike.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this context, we present a framework that tackles two
-challenging tasks. First, a video registration procedure that aims
-to align IR and RGB videos. Second, a fusion method brings all
-the essential information from the two video modalities to a single video. We evaluate our approach on a challenging dataset of
-RGB and IR video pairs collected for firefighters to handle their
-tasks effectively in challenging visibility conditions such as heavy
-smoke after a fire.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this project, we examine a problem relevant to the pandemic, that is, adding masks to people’s faces or removing them, and discuss state-of-the-art technique CycleGAN.
+Furthermore, we evaluate the performance of person identitification classifiers with real/fake data with/out masks.
+We show that CycleGAN produces well masked faces from
+naked faces as input, while provides poor results of naked
+faces starting from masked faces. Additionally, we show
+improvement of classification accuracy on synthetic data
 
 #### Publications: ####
 * Marouf I.E, Ümit Bora GÖKBAKAN. (2021) "Adding and Removing Masks to/from People Using GANs" [[pdf]](./paper/MAROUF_GOKBAKAN_INF634.pdf)
 
 #### Code, Data, and Supplemental Material ####
 
-Please download the code [GitHub](https://github.com/IemProg/add-remove-masks-CycleGAN).   
+Please download the code [GitHub](https://github.com/IemProg/LFWD_Dataset_with_Cycle-GAN).   
 
 Please download the report [[pdf]](./paper/MAROUF_GOKBAKAN_INF634.pdf).
 
